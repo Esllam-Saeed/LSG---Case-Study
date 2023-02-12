@@ -1,0 +1,45 @@
+Summary:
+
+Designing a network with 2 Linux servers and 2 databases involves creating a secure and efficient infrastructure for storing and managing data.
+The 2 Linux servers can be configured as web servers to host web applications and serve user requests, while the 2 databases can be used to store and manage 
+the underlying data.
+it is important to properly balance the load between the servers, and to configure appropriate network security measures,such as Security group and access controls. 
+In addition,it is important to implement cloud watch monitoring and logging systems to monitor the health of the network and ensure that
+ any issues can be quickly identified and resolved.
+
+
+Steps:
+  * Web Servers:
+    - Launch 2 EC2 instances with a suitable instance type, such as t2.micro, to run the web servers.
+    - Assign each instance to a different availability zone to achieve high availability.
+    - Install a web server software, such as Apache or Nginx, on each instance to serve web content.
+    - Configure a load balancer, such as Elastic Load Balancer, in front of the web servers to distribute incoming traffic and provide failover capabilities.
+    - Attach an elastic IP address to each web server to ensure a fixed public IP address.
+
+ * Databases:
+    - Launch 2 RDS instances with a suitable database engine, such as MySQL or PostgreSQL .
+    - Assign each instance to a different availability zone to achieve high availability.
+    - Create a database for each instance and configure the required tables and permissions.
+    - Secure the database instances by restricting the access to specific IP addresses or subnets and enabling encryption at rest.
+ * Networking:
+ - Create a Virtual Private Cloud (VPC) to isolate the network environment and control the traffic flow.
+ - Create a public subnet for the load balancer and a private subnet for the web servers .
+ - Configure a routing table for the public subnet to route internet traffic through an Internet Gateway.
+ - Configure a security group for the web servers and databases to control inbound and outbound traffic.
+ - Create a database security group to allow access to the databases only from the web servers.
+
+The following tools and services are required :
+Amazon Web Services account
+EC2 instances for web servers
+RDS instances for databases
+Load balancer
+VPC and subnets
+Internet Gateway
+Security groups
+Elastic IP addresses
+cloud watch
+route53
+auto scaling 
+CloudTrail  "Elasticsearch, Amazon Kibana, and Amazon Logstash"
+
+End users can connect to the web servers through the load balancer's public IP address. To ensure a secure connection.

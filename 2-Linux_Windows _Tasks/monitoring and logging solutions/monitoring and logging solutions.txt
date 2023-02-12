@@ -1,0 +1,16 @@
+                                                                    monitoring and logging solutions
+
+ I was responsible for monitoring solution to monitor all devices in my company, microsoft has solution to manage and monitoring is called SCCM. take a moment and think about 
+licence , VM  resorces for example MS recommend Min 95 G RAM. I implement Zabbix and tested it then migerated it from testing environment to production.
+I got promtion regarding this 
+
+OpenSource and Free application           
+
+your question now How about servers , right ?
+
+there are a new solution called prometheus . prometheus is data source, I deployed it then used Grafana as data visualization for dashboards.
+ Syslog server I tested it on Devops diploma but in production usually i use IBM products.
+
+my role here is not only find best solutions , Save company money and resource , my thinking way not only as a technical.
+
+

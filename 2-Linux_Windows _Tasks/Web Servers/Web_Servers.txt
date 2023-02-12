@@ -1,0 +1,61 @@
+                                                                    (Apache, Nginx, IIS) 
+
+Summary
+   No one can describe his knowledge or experience in only words  , anyway  I will list some of my achievements and previous experience
+
+   Regarding to Apache :    linux server 
+
+     Implementation & configuration 
+
+I implement it within tasks  such as "portal company with PHP code , for apps like zabbix pure installtion "OS + Services +packages" not appliance ready for deplayment.
+also used it to configure grafana . 
+
+used it while I was deploying Hikcentral and cameras app to manage and configure it .
+
+my achievement here is how to let helpdesk team dealing with this in easy way .I used webman tools to be a web console 
+
+        maintaining
+I have experiences on it while i was troubleshooting veritas backup solution the web console did not work , elastix solution with the same issue and nakivo.
+
+veritas everything was normal and i suggest to upgrade and worked fine , nakivo was utilization on memory .
+
+IIS
+
+I deployed IIS services on microsoft windows server for the finnance team to use it for digital signature and microsoft dynamics  and created SQL for this and we faced an issue with dot net code , 
+I tested it also in apache server and dose not work  ,the problem was in app file.
+
+my achievment is:
+ 
+choosing situtable app for remote session like "VNC" instead of RDP Or anydesk  why ?   anydesk any one can take the ID and reqest session .RDP didnot work due to USB 
+
+let us now why VNC  :
+ 1- Simple app 
+ 2- Security   must user internal company ips 
+ 3- can track login sessions 
+
+
+
+
+
+Nginx :
+         I used it while FWD scohlarship and devops diploma it is better than Apache "can handle  alot of requests , load blanacing  and high perferomans.
+
+
+
+did you notice something ? 
+I did customers needs " finnance team " after my suggestion regarding VNC . It means doing the work but professinal way not as requested only . Discussion do the best .
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

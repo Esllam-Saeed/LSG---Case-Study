@@ -1,0 +1,25 @@
+                                                                  LVM, NFS, and iSCSI.
+
+
+Regarding NFS :
+
+                   imagine you are working in call center company with around 3000  and you have around 100 shared folder and as you know call center 
+               agents come and gone , I think you put your hand on the problem , right How can IT handle a lot of sharing requests ?
+                     sure totally agree with your solution : is create  2 groups for every shared folder but what if make these
+               groups managed by team leader or every manager department he will responsible for add or remove team members to groups
+
+
+my role here  :
+                    is how to manage my work and raise my hand from my role here is how to manage my work and raise my hand from unnecessary work
+
+
+
+Iscsi    
+ as i told you before I dealt with it on with 3 type of storage Freenas and qnap vsan     
+one of my experience here when i upgrade freenas to the last version i faced problem with ISCSI services ? what if I downgrade again and had the same issue 
+          
+
+my role 
+          face new problems and try to fix it instead of turn back .  
+ 
+

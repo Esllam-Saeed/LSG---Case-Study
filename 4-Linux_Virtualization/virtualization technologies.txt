@@ -1,0 +1,18 @@
+                                                       virtualization technologies
+
+                             my experience regarding vmware I can do anything in esxi "vsphere"
+                      I can operate and support VCenter & VSAN . Here let me display my experince in Vcenter . one of companies had problem .
+                   The issue was the couldnot upload iso in Vcneter CA 
+                   Issue  ?    It was the first time to deal with Vcenter directrly I generated Certificate and imported it
+                       " VMware support didnot resolve the problem due to this is not 
+                              related them .
+
+                 The second challenge here how to migrate your environment from on premises to cloud in short time
+                    and migrate a VM storage depend on 40T ISCSI with 5 targets to be in one without long downtime 
+
+                      new I deep learning with NSX "Network virtualization & vralize automation "
+
+                                                 regarding to Hper-V 
+
+         One time just there were 2008 R2 and Hyper-v the vm keep restarting . the issue was os license.
+
