@@ -1,0 +1,3 @@
+> ss -tlnp
+> netstat -tlnp
+> firewall-cmd --list-ports

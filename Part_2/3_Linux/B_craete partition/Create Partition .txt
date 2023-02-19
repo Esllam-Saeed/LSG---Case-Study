@@ -1,0 +1,34 @@
+
+> fdisk -l                                #list disks 
+> fdisk /dev/sdc                         # to deal with the disk
+At the Command prompt, type n to create a new partition:
+
+Command (m for help): n                    # new partition
+
+Choose the partition type by typing p for a primary partition or e for an extended partition:
+Partition type
+p   primary (0 primary, 0 extended, 4 free)
+e   extended (container for logical partitions)
+Select (default p): p                        #primary
+
+Specify the partition number, starting sector, and ending sector. You can choose default values by pressing Enter for each prompt:
+
+
+Partition number (1-4, default 1):
+First sector (2048-10485759, default 2048):
+Last sector, +sectors or +size{K,M,G,T,P} (2048-10485759, default 10485759):              #size 
+
+
+Type w to write the changes to the disk and exit the fdisk command:
+
+Command (m for help): w                              #save
+
+>  mkfs.ext4 /dev/sdc1                                # create file system 
+>  mkdir /mnt/my_partition                             # create dir to access the data in this partition 
+>  blkid /dev/sdc1                                      #  to get ID 
+>  vim /etc/fsatb                                      #  to mount it parmenant     
+    insert this line 
+UUID=<UUID_value> /mnt/my_partition ext4 defaults 0 0
+> mount -a                                            to check fstab file syntax if has error 
+> cd /mnt/my_partition                                  then you can put your data here 
+

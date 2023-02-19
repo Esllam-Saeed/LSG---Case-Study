@@ -1,0 +1,11 @@
+
+$serverName = "EC2AMAZ-QFOK87C"
+
+# Get all not running services
+$notRunningServices = Get-Service -ComputerName $serverName | Where-Object { $_.Status -ne "Running" }
+
+# Restart all not running services
+foreach ($service in $notRunningServices) {
+    Write-Host "Restarting service $($service.Name)..."
+    Restart-Service -InputObject $service -Force
+}

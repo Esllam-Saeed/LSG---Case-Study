@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Check for outdated software packages
+outdated_packages=$(yum check-update | awk '{print $1}')
+
+if [[ -n $outdated_packages ]]; then
+  echo "The following packages are outdated: $outdated_packages"
+  
+  # Update outdated packages
+  yum update -y
+  
+  echo "Packages have been updated successfully."
+else
+  echo "No outdated packages found."
+fi

@@ -1,0 +1,38 @@
+# Set the threshold values for CPU utilization and free disk space
+$cpuThreshold = 80 # set the CPU utilization threshold to 80%
+$diskThreshold = 10 # set the free disk space threshold to 10%
+
+# Get the current CPU utilization percentage
+$cpuUtilization = (Get-Counter -Counter "\Processor(_Total)\% Processor Time" -SampleInterval 1 -MaxSamples 1).CounterSamples[0].CookedValue
+
+# Get the percentage of free disk space
+$diskFree = (Get-PSDrive C | Select-Object Used,Free,Name | Measure-Object -Property Free -Maximum).Maximum / 1GB * 100
+
+# Check if the CPU utilization or free disk space is above the threshold
+if ($cpuUtilization -gt $cpuThreshold -or $diskFree -lt $diskThreshold) {
+
+    # Set the email parameters
+    $smtpServer = "smtp.gmail.com"
+    $smtpPort = 587
+    $smtpUsername = "esllam.saeid"
+    $smtpPassword = "password"
+    $emailTo = "esllam.saeid@gmail.com"
+    $emailFrom = "esllam.saeid@gmail.com"
+    $subject = "Alert: High CPU Utilization or Low Disk Space"
+    $body = "Warning: CPU utilization is above threshold ($cpuThreshold%) or disk space is low ($diskFree%)."
+
+    # Send the email
+    $emailParams = @{
+        To = $emailTo
+        From = $emailFrom
+        Subject = $subject
+        Body = $body
+        SmtpServer = $smtpServer
+        Port = $smtpPort
+        Credential = New-Object System.Management.Automation.PSCredential ($smtpUsername, (ConvertTo-SecureString $smtpPassword -AsPlainText -Force))
+        UseSsl = $true
+    }
+    Send-MailMessage @emailParams
+}
+
+
